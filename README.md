@@ -1,5 +1,5 @@
 # LAB - Class 29
-## Project: snacks_crud_projectDjangoX
+## Project: DjangoX
 ## Author: Firas Awadallah
 ### How to initialize/run your application (where applicable)
 * python  manage.py runserver 
