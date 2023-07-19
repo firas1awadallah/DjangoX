@@ -1,13 +1,28 @@
 {% extends '_base.html' %}
+{% load static %}
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/detailssnack.css' %}">
 
-<h1>Details about: </h1> 
-<h2>Name : {{ snack.name }} </h2>
-<h2>Purcheser : {{ snack.purcheser.first_name }} {{ snack.purcheser.last_name }}</h2>
-<p><h2>Descreption : </h2> {{ snack.desc }}</p>
-<a href="{% url 'snack_update' snack.pk %}">+ Update snack</a>
-<a href="{% url 'snack_delete' snack.pk %}">+ Delete snack</a>
+<h1>Details about: </h1>
+<table class="snack-table">
+  <tr>
+    <td class="table-heading">Name:</td>
+    <td>{{ snack.name }}</td>
+  </tr>
+  <tr>
+    <td class="table-heading">Purchaser:</td>
+    <td>{{ snack.purcheser.first_name }} {{ snack.purcheser.last_name }}</td>
+  </tr>
+  <tr>
+    <td class="table-heading">Description:</td>
+    <td>{{ snack.desc }}</td>
+  </tr>
+</table>
+<br>
+<a href="{% url 'snack_update' snack.pk %}"> Update snack</a>
+<br>
+<a href="{% url 'snack_delete' snack.pk %}"> Delete snack</a>
 <br>
 <a href="{% url 'snack_list'%}">Snacks List</a>
 

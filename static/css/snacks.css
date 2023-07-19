@@ -1,0 +1,45 @@
+
+body{
+    background-color: #bbf1d2;
+}
+.ulsnacks {
+    list-style-type: disc; /* Bullet style: disc, circle, square, none */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Text color for list items */
+    font-family: Arial, sans-serif; /* Font family for list items */
+    font-size: 16px; /* Font size for list items */
+    line-height: 1.6; /* Line height for list items */
+    background-color: #f2f2f2; /* Background color for the entire list */
+    border: 1px solid #ccc; /* Border around the list */
+    border-radius: 5px; /* Rounded corners for the list */
+    max-width: 400px; /* Limit the maximum width of the list */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+/* Additional styles for the <li> elements */
+.lisnacks {
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+  
+  /* Style for the last <li> element in the list */
+  .lisnacks:last-child {
+    margin-bottom: 0; /* Remove margin from the last list item */
+  }
+  
+  /* Custom bullet icon using pseudo-element ::before */
+  .ulsnacks.custom-bullet .lisnacks::before {
+    content: "\2022"; /* Unicode bullet symbol ● */
+    margin-right: 10px; /* Add space between the bullet and the content */
+    color: #ff5733; /* Custom bullet color */
+  }
+  
+/* Styling for the .custom-link class */
+.asnacks {
+    color: #007bff; /* Link text color */
+    text-decoration: none; /* Remove underline from the links */
+  }
+  
+
+  

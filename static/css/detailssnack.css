@@ -1,0 +1,54 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Heading styles */
+  h1 {
+    color: #333;
+  }
+  
+  h2, h3 {
+    color: #555;
+  }
+  
+  /* Table styles */
+  .snack-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .snack-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .table-heading {
+    font-weight: bold;
+  }
+  
+  /* Paragraph styles */
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button:active {
+    background-color: #ff0000;
+  }
+  
